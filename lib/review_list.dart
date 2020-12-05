@@ -19,7 +19,6 @@ class ReviewList extends StatelessWidget {
             "1 review - 200 niños secuestrados", "Towiaaaaaazzzz...."),
         Review("assets/img/tropi.jpg", "Tropipop", "5 review - 2 escaleras",
             "no mamez wey"),
-            
       ],
     );
   }

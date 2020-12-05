@@ -36,7 +36,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final star = Container(
+final star = Container(
       margin: EdgeInsets.only(top: 323.0, right: 3.0),
       child: Icon(
         Icons.star,
