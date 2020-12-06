@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           ListView(
             children: <Widget>[
               DescriptionPlace("Holi boli", 2,
-                  "Lamentamos informarte que ella no te ama, a pesar de que aún quieras seguir"),
+                  "Lamentamos informarte que ella no te ama, porque no te bañas"),
               ReviewList()
             ],
           ),
