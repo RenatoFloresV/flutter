@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firts_app/description_place.dart';
 import 'package:firts_app/review_list.dart';
+import 'header_appbar.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,17 +18,18 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
-          appBar: AppBar(
-            title: Container(
-              margin: EdgeInsets.only(left: 20),
-              child: Text(
-                "HellFishers",
-                textAlign: TextAlign.left,
-              ),
-            ),
+          body: Stack(
+        children: <Widget>[
+          ListView(
+            children: <Widget>[
+              DescriptionPlace("Holi boli", 2,
+                  "Lamentamos informarte que ella no te ama, a pesar de que aún quieras seguir"),
+              ReviewList()
+            ],
           ),
-          //body: new DescriptionPlace("Pésimo servicio", 2,"Lamentamos informarte que ella no te ama, a pesar de que aún quieras seguir creyendo lo contrario."),
-          body: ReviewList()),
+          HeaderAppbar()
+        ],
+      )),
 
       //MyHomePage(title: 'Flutter Demo Home Page'),
     );
