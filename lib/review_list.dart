@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firts_app/review.dart';
+import 'package:firts_app/description_place.dart';
 
 class ReviewList extends StatelessWidget {
   @override
@@ -7,12 +8,16 @@ class ReviewList extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Review("assets/img/perfil.jpg", "Kareshi Jeréz de Flores",
+        Review("assets/img/perfil.jpg", "Kareshi",
             "3 review - All nudes de black", "Amo a black uwur"),
         Review("assets/img/santi.jpg", "Dr. SS",
             "3 review - 1 pack de su prima", "colonazepam pam pam"),
-        Review("assets/img/nibus.jpg", "Nibuslo",
-            "2 review - 1 pack de la amiga de la novia", "No me la contes..."),
+        Review(
+          "assets/img/nibus.jpg",
+          "Nibuslo",
+          "2 review - 1 pack de la amiga de la novia",
+          "No me la contes..."
+        ),
         Review("assets/img/marce.jpg", "Marce",
             "10 review - 100tb de juegos piratas", "Na... mejor lo emulo"),
         Review("assets/img/tob.jpg", "Turbiaz",

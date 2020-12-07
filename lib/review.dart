@@ -1,3 +1,4 @@
+import 'package:firts_app/description_place.dart';
 import 'package:flutter/material.dart';
 
 class Review extends StatelessWidget {
@@ -5,11 +6,13 @@ class Review extends StatelessWidget {
   String name;
   String details;
   String comment;
+  int stars;
 
   Review(this.pathImage, this.name, this.details, this.comment);
 
   @override
   Widget build(BuildContext context) {
+
     final userComment = Container(
       margin: EdgeInsets.only(left: 20.0),
       child: Text(
