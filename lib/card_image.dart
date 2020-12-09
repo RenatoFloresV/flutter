@@ -9,7 +9,7 @@ class CardImage extends StatelessWidget {
   Widget build(BuildContext context) {
     final card = Container(
       height: 350.0,
-      width: 250.0,
+      width: 280.0,
       margin: EdgeInsets.only(
         top: 80.0,
         left: 20.0,
@@ -28,7 +28,7 @@ class CardImage extends StatelessWidget {
     );
 
     return Stack(
-      alignment: Alignment(0.9, 0.1),
+      alignment: Alignment(0.9, 1.1),
       children: <Widget>[card, FloatingActionButtonGreen()],
     );
   }

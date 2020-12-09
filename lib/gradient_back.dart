@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class GradientBack extends StatelessWidget {
-  String title = "HellFishers";
+  String title;
 
   GradientBack(this.title);
 
@@ -24,7 +24,7 @@ class GradientBack extends StatelessWidget {
             fontFamily: "Lobster",
             fontWeight: FontWeight.bold),
       ),
-      alignment: Alignment(-0.9, -0.6),
+      alignment: Alignment(-0.9, -0.5),
     );
   }
 }
