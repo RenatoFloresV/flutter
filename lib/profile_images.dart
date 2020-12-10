@@ -9,13 +9,14 @@ class ProfileImages extends StatelessWidget {
   String visitsPlace;
   String pathImage;
 
-  ProfileImages(this.titlePlace, this.descriptionPlace, this.visitsPlace, this.pathImage);
+  ProfileImages(
+      this.titlePlace, this.descriptionPlace, this.visitsPlace, this.pathImage);
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: <Widget>[
+    return Container(
+        child: Stack(alignment: Alignment(0.0,1.5), children: <Widget>[
       ProfileImage(pathImage),
       DescriptionProfile(titlePlace, descriptionPlace, visitsPlace)
-    ]);
+    ]));
   }
 }

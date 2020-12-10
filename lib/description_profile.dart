@@ -42,11 +42,7 @@ class DescriptionProfile extends StatelessWidget {
     final descriptionFinal = Container(
         height: 120.0,
         width: 250.0,
-        margin: EdgeInsets.only(
-          top: 180.0,
-          left:50.0
-          
-        ),
+        margin: EdgeInsets.only(),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10.0)),
             shape: BoxShape.rectangle,
@@ -58,9 +54,11 @@ class DescriptionProfile extends StatelessWidget {
             ]),
         child: Column(children: [title, description, visits]));
 
-    return Stack(
-      alignment: Alignment(0.9, 1.1),
-      children: <Widget>[descriptionFinal, FloatingActionButtonGreen()],
+    return Container(
+      child: Stack(
+        alignment: Alignment(0.9, 1.1),
+        children: <Widget>[descriptionFinal, FloatingActionButtonGreen()],
+      ),
     );
   }
 }

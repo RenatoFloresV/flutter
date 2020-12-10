@@ -6,10 +6,9 @@ class ProfileImagesList extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-      height: 350.0,
+      height: 580,
       child: ListView(
         padding: EdgeInsets.all(25.0),
-        scrollDirection: Axis.vertical,
         children: <Widget>[
           ProfileImages(
               "Title", "Description", "666,666", "assets/img/img1.jpg"),
