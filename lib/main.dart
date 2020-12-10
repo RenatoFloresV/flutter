@@ -1,7 +1,6 @@
-import 'package:firts_app/user_date.dart';
 import 'package:flutter/material.dart';
-import 'platzi_tripz_cupertino.dart';
 import 'header_profile.dart';
+import 'platzi_tripz_cupertino.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,8 +16,8 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blueGrey,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: 
-        
+        home: PlatziTripsCupertino()
+
         //MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }

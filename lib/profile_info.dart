@@ -1,37 +1,42 @@
 import 'package:flutter/material.dart';
 
-class UserDate extends StatelessWidget {
+class ProfileInfo extends StatelessWidget {
   String name;
   String email;
   String pathImage;
 
-  UserDate(this.name, this.email);
+  ProfileInfo(this.pathImage, this.name, this.email);
 
   @override
   Widget build(BuildContext context) {
-    final nameProfile = Container(
-      margin: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
+    // TODO: implement build
+
+    final userName = Container(
+      margin: EdgeInsets.only(top: 140.0, left: 20.0, right: 20.0),
       child: Text(
         name,
         style: TextStyle(
-            fontFamily: "Lobster", fontSize: 16.0, color: Colors.black38),
+            fontFamily: "Lobster", fontSize: 16.0, color: Colors.white),
       ),
     );
-    final emailProfile = Container(
+
+    final userEmail = Container(
       margin: EdgeInsets.only(top: 20.0, left: 20.0, right: 20.0),
       child: Text(
         email,
         style: TextStyle(
-            fontFamily: "Lobster", fontSize: 16.0, color: Colors.black38),
+            fontFamily: "Lobster", fontSize: 16.0, color: Colors.white),
       ),
     );
-    final UserInfo = Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[nameProfile, emailProfile]);
+
+    final profileDetails = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[userName, userEmail],
+    );
 
     final photo = Container(
       margin: EdgeInsets.only(
-        top: 20.0,
+        top: 130.0,
         left: 20.0,
       ),
       width: 80.0,
@@ -41,8 +46,10 @@ class UserDate extends StatelessWidget {
           image:
               DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage))),
     );
+
     return Row(
-      children: <Widget>[photo, UserInfo],
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[photo, profileDetails],
     );
   }
 }
